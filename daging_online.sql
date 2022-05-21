@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Jan 2021 pada 23.42
--- Versi server: 10.4.17-MariaDB
--- Versi PHP: 8.0.0
+-- Generation Time: May 21, 2022 at 07:04 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.4.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `carts`
+-- Table structure for table `carts`
 --
 
 CREATE TABLE `carts` (
@@ -35,10 +35,17 @@ CREATE TABLE `carts` (
   `total` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `carts`
+--
+
+INSERT INTO `carts` (`id_cart`, `user_id`, `product_id`, `banyak`, `total`) VALUES
+(77, 19, 13, 1, 45000);
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `categories`
+-- Table structure for table `categories`
 --
 
 CREATE TABLE `categories` (
@@ -48,23 +55,17 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `categories`
+-- Dumping data for table `categories`
 --
 
 INSERT INTO `categories` (`id`, `category_name`, `slug`) VALUES
-(1, 'Paha', 'paha'),
-(2, 'Dada', 'dada'),
-(3, 'Kepala', 'kepala'),
-(4, 'Ceker', 'ceker'),
-(5, 'Ayam Utuh', 'ayam-utuh'),
-(6, 'Sayap', 'sayap'),
-(7, 'Usus', 'usus'),
-(8, 'Kerongkongan', 'kerongkongan');
+(9, 'Bolu Jadul', 'bolu-jadul'),
+(10, 'Bolu kukus', 'bolu-kukus');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `drivers`
+-- Table structure for table `drivers`
 --
 
 CREATE TABLE `drivers` (
@@ -78,17 +79,17 @@ CREATE TABLE `drivers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `drivers`
+-- Dumping data for table `drivers`
 --
 
 INSERT INTO `drivers` (`id_driver`, `name_driver`, `email`, `password`, `phone_number`, `jurusan`, `no_pegawai`) VALUES
-(1, 'Sulton Rosadi', 'sulton@gmail.com', '$2y$10$GzyjiDN5Yh/ccf8Fpw20LeYMI7QFOJN6aEUd/2dl6hY9YkEvG73OW', '098887665455', 'JAKARTA', 11221133),
+(1, 'Sulton Rosadi', 'sulton@gmail.com', '$2y$10$GsqWG0SAYA2aB.M73mYz0.xzbUm0aVBaY8yZO4Xi0JXhWKCPzs1q2', '098887665455', 'JAKARTA', 11221133),
 (2, 'Ahmad Faridh', 'farid@gmail.com', '$2y$10$jYa12Iccc3U5r.LOcVSi.etfKxweMBlRKJBfrwq.qf1/xu8q9UArG', '999999888767', 'BOGOR', 223355);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `products`
+-- Table structure for table `products`
 --
 
 CREATE TABLE `products` (
@@ -102,24 +103,18 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `products`
+-- Dumping data for table `products`
 --
 
 INSERT INTO `products` (`id_product`, `product_name`, `unit`, `price`, `descriptions`, `category_id`, `stock`) VALUES
-(1, 'Paha Atas ', 1000, '30000', '<p>Dalam 100 gram&nbsp;<strong>paha atas</strong>&nbsp;tanpa kulit dan tulang, terdapat sebanyak 26 gram protein.&nbsp;<strong>Paha atas</strong>&nbsp;ini juga mengandung 209 kalori dalam 100 gramnya. Dari kalori tersebut, 53 persen berasal dari protein, dan sisanya sekitar 47 persen berasal dari lemak.</p>\r\n', 1, '17000'),
-(2, 'Boneless Dada', 1000, '40000', '<p>Boneless Dada (Skinless) merupakan bagian dada tanpa tulang dan kulit dan memiliki kandungan lemak&nbsp;yang sangat rendah. Dimana kandungan kalori yang diperoleh dari lemak hanya 14, sedangkan lemak total sekitar 1,5 gram. Jumlah protein yang diperoleh adalah 24 gram protein</p>\r\n', 2, '4000'),
-(3, 'Kepala Ayam', 1000, '11000', '<p>Kepala Paling Enak</p>\r\n', 3, '0'),
-(4, 'Paha Boneless', 1000, '36000', '<p>Paha tanpa tulang</p>\r\n', 1, '35000'),
-(5, 'Usus Ayam', 1000, '16000', '<p>Usus Baik Untuk Usus</p>\r\n', 7, '8000'),
-(7, 'Ceker Ayam', 1000, '25000', '<p>Ceker Ayam Wenak</p>\r\n', 4, '0'),
-(8, 'Ayam Utuh Kriuk', 1000, '29000', '<p>Ayam Utuh Yang terkenal Kriuk dagingnya</p>\r\n', 5, '1000'),
-(10, 'Sayap Ayam', 1000, '30000', '<p>Sayap Ayam Terbang</p>\r\n', 6, '4000'),
-(12, 'Kerongkongan', 1000, '14000', '<p>Kerongkongan Ayam yang sangat <strong>enak dan lembut</strong></p>\r\n', 8, '8000');
+(13, 'Bolu Coklat', 1000, '45000', '', 9, '18000'),
+(14, 'Bolu kukus', 1000, '3000', '', 10, '20000'),
+(15, 'Bolu Jadul Original', 1000, '30000', '', 9, '40000');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `products_galleries`
+-- Table structure for table `products_galleries`
 --
 
 CREATE TABLE `products_galleries` (
@@ -129,7 +124,7 @@ CREATE TABLE `products_galleries` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `products_galleries`
+-- Dumping data for table `products_galleries`
 --
 
 INSERT INTO `products_galleries` (`id_gallery`, `photos`, `product_id`) VALUES
@@ -159,12 +154,16 @@ INSERT INTO `products_galleries` (`id_gallery`, `photos`, `product_id`) VALUES
 (29, '600ec19130fe4.jpg', 10),
 (30, '600ec1e730307.jpg', 12),
 (31, '600ec1fd2b098.jpg', 12),
-(32, '600ec20b44b6d.jpg', 12);
+(32, '600ec20b44b6d.jpg', 12),
+(33, '6267c6b353fe6.jpg', 13),
+(35, '62886f0809bb6.jpg', 13),
+(36, '628871ed3b870.jpg', 14),
+(37, '6288723eac13e.jpg', 15);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `rekening_numbers`
+-- Table structure for table `rekening_numbers`
 --
 
 CREATE TABLE `rekening_numbers` (
@@ -175,7 +174,7 @@ CREATE TABLE `rekening_numbers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `rekening_numbers`
+-- Dumping data for table `rekening_numbers`
 --
 
 INSERT INTO `rekening_numbers` (`id_rekening`, `bank_name`, `number`, `rekening_name`) VALUES
@@ -186,7 +185,7 @@ INSERT INTO `rekening_numbers` (`id_rekening`, `bank_name`, `number`, `rekening_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transactions`
+-- Table structure for table `transactions`
 --
 
 CREATE TABLE `transactions` (
@@ -206,7 +205,7 @@ CREATE TABLE `transactions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `transactions`
+-- Dumping data for table `transactions`
 --
 
 INSERT INTO `transactions` (`id_transaction`, `user_id`, `total_price`, `city`, `rekening_id`, `transaction_status`, `weight_total`, `delivered`, `photo_transaction`, `code`, `receiver`, `time_arrived`, `created_at`) VALUES
@@ -220,7 +219,7 @@ INSERT INTO `transactions` (`id_transaction`, `user_id`, `total_price`, `city`, 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transactions_details`
+-- Table structure for table `transactions_details`
 --
 
 CREATE TABLE `transactions_details` (
@@ -233,7 +232,7 @@ CREATE TABLE `transactions_details` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `transactions_details`
+-- Dumping data for table `transactions_details`
 --
 
 INSERT INTO `transactions_details` (`id_transaction_detail`, `transaction_id`, `product_id`, `price`, `banyak`, `code_product`) VALUES
@@ -254,7 +253,7 @@ INSERT INTO `transactions_details` (`id_transaction_detail`, `transaction_id`, `
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -269,133 +268,134 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id_user`, `name`, `email`, `password`, `address`, `phone_number`, `postal_code`, `roles`) VALUES
-(1, 'Hafizh Maulana Y', 'hafizhmy26@gmail.com', '$2y$10$/v28V4a4hxcdc3KtkVc8huoop7Ir2NKDk2zA2DDFO9O0u7o9xG7Lq', '<p>Jln Gang Hamzah No 22</p>\r\n', '098987898765', '11111111', 'ADMIN'),
-(3, 'AMANDA PUTRI', 'manda@gmail.com', '$2y$10$2jrwSDZqHQgKlTUxPGnRau8ZD8Jgj9lNE4tBvRDsuNKNzVnEsbtxG', '<p>Jln Kampung Gunung No 22</p>\r\n', '099998887776', '224455', 'USER'),
-(6, 'Vita Mahandari', 'vita@gmail.com', '$2y$10$2s/dgjADHLW1D5Ha.1qdz.as3ShDVYB/2V8fHh/P81dqtlKK2V8nG', '<p>Jln Rawa Belong No 54</p>\r\n', '098765432111', '445566', 'USER'),
-(9, 'riski', 'riski@gmail.com', '$2y$10$xrt0u8OUv5S7n7L94MMSfuKtykPNnpvnrRLp0LQuV1dD5lsgpeuLW', '<p>Jln Athar Muhammad No 24</p>\r\n', '12345678', '10101010', 'USER'),
-(10, 'Syatya Athary', 'athar@gmail.com', '$2y$10$LGiCeFBz8fFfOTkL8hMJxO1P6e6qq2aW3Vcc2jcc0SbdGHrVPnXX.', '<p>Jln H sanusi Gang Hamzah No 28</p>\r\n', '098777776668', '12345', 'OWNER');
+(1, 'Hafizh Maulana Y', 'hafizhmy26@gmail.com', '$2y$10$/v28V4a4hxcdc3KtkVc8huoop7Ir2NKDk', '<p>Jln Gang Hamzah No 22</p>\r\n', '098987898765', '11111111', 'ADMIN'),
+(3, 'AMANDA PUTRI', 'manda@gmail.com', '$2y$10$2jrwSDZqHQgKlTUxPGnRau8ZD8Jgj9lNE', '<p>Jln Kampung Gunung No 22</p>\r\n', '099998887776', '224455', 'USER'),
+(6, 'Vita Mahandari', 'vita@gmail.com', '$2y$10$2s/dgjADHLW1D5Ha.1qdz.as3ShDVYB/2', '<p>Jln Rawa Belong No 54</p>\r\n', '098765432111', '445566', 'USER'),
+(10, 'Syatya Athary', 'athar@gmail.com', '$2y$10$LGiCeFBz8fFfOTkL8hMJxO1P6e6qq2aW3', '<p>Jln H sanusi Gang Hamzah No 28</p>\r\n', '098777776668', '12345', 'OWNER'),
+(18, 'hamzah', 'hamzah@gmail.com', '$2y$10$w3fN1eHMZM48hLFYrfrl3e9oqsWDee29BeBHibhJqZiQiwLzo/tFu', NULL, '089', '', 'ADMIN'),
+(19, 'why', 'why@gmail.com', '$2y$10$2Ow8o/KFZ9LezC08pMYqT.cUUb3aaHxoMYdqnUh2K7Dj.dJmMidme', '', '980', '', 'USER');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `carts`
+-- Indexes for table `carts`
 --
 ALTER TABLE `carts`
   ADD PRIMARY KEY (`id_cart`);
 
 --
--- Indeks untuk tabel `categories`
+-- Indexes for table `categories`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `drivers`
+-- Indexes for table `drivers`
 --
 ALTER TABLE `drivers`
   ADD PRIMARY KEY (`id_driver`),
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- Indeks untuk tabel `products`
+-- Indexes for table `products`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`id_product`);
 
 --
--- Indeks untuk tabel `products_galleries`
+-- Indexes for table `products_galleries`
 --
 ALTER TABLE `products_galleries`
   ADD PRIMARY KEY (`id_gallery`);
 
 --
--- Indeks untuk tabel `rekening_numbers`
+-- Indexes for table `rekening_numbers`
 --
 ALTER TABLE `rekening_numbers`
   ADD PRIMARY KEY (`id_rekening`);
 
 --
--- Indeks untuk tabel `transactions`
+-- Indexes for table `transactions`
 --
 ALTER TABLE `transactions`
   ADD PRIMARY KEY (`id_transaction`);
 
 --
--- Indeks untuk tabel `transactions_details`
+-- Indexes for table `transactions_details`
 --
 ALTER TABLE `transactions_details`
   ADD PRIMARY KEY (`id_transaction_detail`);
 
 --
--- Indeks untuk tabel `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id_user`),
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `carts`
+-- AUTO_INCREMENT for table `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
--- AUTO_INCREMENT untuk tabel `categories`
+-- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT untuk tabel `drivers`
+-- AUTO_INCREMENT for table `drivers`
 --
 ALTER TABLE `drivers`
   MODIFY `id_driver` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT untuk tabel `products`
+-- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT untuk tabel `products_galleries`
+-- AUTO_INCREMENT for table `products_galleries`
 --
 ALTER TABLE `products_galleries`
-  MODIFY `id_gallery` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id_gallery` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
--- AUTO_INCREMENT untuk tabel `rekening_numbers`
+-- AUTO_INCREMENT for table `rekening_numbers`
 --
 ALTER TABLE `rekening_numbers`
   MODIFY `id_rekening` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT untuk tabel `transactions`
+-- AUTO_INCREMENT for table `transactions`
 --
 ALTER TABLE `transactions`
   MODIFY `id_transaction` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT untuk tabel `transactions_details`
+-- AUTO_INCREMENT for table `transactions_details`
 --
 ALTER TABLE `transactions_details`
   MODIFY `id_transaction_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT untuk tabel `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
