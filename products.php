@@ -54,7 +54,7 @@ $categories = query("SELECT * FROM categories");
     >
       <div class="container">
         <a href="index.php" class="navbar-brand" title="home">
-          <img src="assets/images/logo.jpg" class="w-50" alt="logo" />
+          <img src="assets/images/BoluJadoel.png" style="width: 20%;" alt="logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -179,7 +179,7 @@ $categories = query("SELECT * FROM categories");
               <?php else : ?>
                 <h5 class="mb-1">All Products</h5>
               <?php endif;?>
-              <p class="text-muted">Tersedia Daging Segar Pilihan</p>
+              <p class="text-muted">Tersedia Bolu Paling Enak</p>
             </div>
             <div class="col-lg-4">
               <form action="" method="GET">
@@ -291,7 +291,7 @@ $categories = query("SELECT * FROM categories");
         <div class="row">
           <div class="col-12">
             <p class="pt-4 pb-2">
-              &copy; 2021 Copyright by Elza Mandiri. All Rights Reserved.
+              &copy; 2022 Copyright by Hamzah Raihan Ikhsanul Fikri. All Rights Reserved.
             </p>
           </div>
         </div>

@@ -51,7 +51,11 @@
       <!-- mobile app -->
       <ul class="navbar-nav d-block d-lg-none">
         <li class="nav-item">
-          <a href="" class="nav-link"> Hi, Hafizh </a>
+          <a href="" class="nav-link"><?php 
+              $id_user = $_SESSION['user'];
+              $user = query("SELECT * FROM users WHERE id_user = $id_user")[0];
+            ?>
+            Hi, <?= $user["name"]; ?></a>
         </li>
       </ul>
     </div>

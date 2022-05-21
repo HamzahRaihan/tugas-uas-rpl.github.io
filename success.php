@@ -77,7 +77,7 @@ $user = query("SELECT * FROM users WHERE id_user = $id")[0];
         <div class="row">
           <div class="col-12">
             <p class="pt-4 pb-2">
-              2020 Copyright Store by Hafizh. All Rights Reserved.
+              2022 Copyright by Hamzah Raihan Ikhsanul Fikri. All Rights Reserved.
             </p>
           </div>
         </div>

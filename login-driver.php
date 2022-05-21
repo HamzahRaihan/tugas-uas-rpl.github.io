@@ -47,7 +47,7 @@ if (isset($_POST["login"])) {
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Login | Toko Supplier Daging Ayam Segar</title>
+    <title>Login | Toko Bolu Jadul Online</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="assets/style/main.css" rel="stylesheet" />
@@ -61,7 +61,7 @@ if (isset($_POST["login"])) {
     >
       <div class="container">
         <a href="index.php" class="navbar-brand" title="home">
-          <img src="assets/images/logo.jpg" class="w-50" alt="logo" />
+          <img src="assets/images/BoluJadoel.png" style="width: 20%;" alt="logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -95,7 +95,7 @@ if (isset($_POST["login"])) {
           <div class="row align-items-center row-login">
             <div class="col-lg-6 text-center">
               <img
-                src="assets/images/login-placeholder.jpg"
+                src="assets/images/BoluJadoelUmi5.png"
                 alt=""
                 class="w-50 mb-lg-none"
               />
@@ -149,7 +149,7 @@ if (isset($_POST["login"])) {
         <div class="row">
           <div class="col-12">
             <p class="pt-4 pb-2">
-              2020 Copyright Store by Hafizh. All Rights Reserved.
+              2022 Copyright by Hamzah Raihan Ikhsanul Fikri. All Rights Reserved.
             </p>
           </div>
         </div>

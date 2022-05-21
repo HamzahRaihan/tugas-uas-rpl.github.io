@@ -28,7 +28,7 @@ if (!isset($_SESSION["login"]) && !isset($_SESSION["user"])) {
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Dashboard | Toko Supplier Daging Ayam Segar</title>
+    <title>Dashboard | Toko Bolu Jadul Online</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="../assets/style/main.css" rel="stylesheet" />
@@ -46,7 +46,7 @@ if (!isset($_SESSION["login"]) && !isset($_SESSION["user"])) {
         <!-- sidebar -->
         <div class="border-right" id="sidebar-wrapper">
           <div class="sidebar-heading text-center">
-            <img src="../assets/images/logo.jpg" alt="" class="my-4 w-50" />
+            <img src="../assets/images/BoluJadoel.png" alt="" class="my-4 w-50" />
           </div>
           <div class="list-group list-group-flush">
             <a

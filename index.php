@@ -28,7 +28,7 @@ if (isset($_SESSION["driver"])) {
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Toko Supplier Daging Ayam Segar</title>
+    <title>Toko Bolu Jadul Online</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="assets/style/main.css" rel="stylesheet" />
@@ -38,6 +38,10 @@ if (isset($_SESSION["driver"])) {
         padding: 40px;
         background-color: #F7F7E8;
       }
+    #logo{
+      width: 20%;
+    }
+    
     </style>
   </head>
 
@@ -49,7 +53,7 @@ if (isset($_SESSION["driver"])) {
     >
       <div class="container">
         <a href="index.php" class="navbar-brand" title="home">
-          <img src="assets/images/logo.jpg" class="w-50" alt="logo" />
+          <img src="assets/images/BoluJadoel.png" alt="logo" id="logo"/>
         </a>
         <button
           class="navbar-toggler"
@@ -151,14 +155,13 @@ if (isset($_SESSION["driver"])) {
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-md-5">
-              <img src="assets/images/bg-landing-removebg-preview.png" class="w-100" alt="" />
+              <img src="assets/images/BoluJadoelUmi5.png" class="w-100" alt="" />
             </div>
             <div class="col-md-6">
-              <h1 style="font-weight: bold; margin-bottom: 15px;">Toko Daging Ayam Potong Segar Online</h1>
+              <h1 style="font-weight: bold; margin-bottom: 15px;">Toko Bolu Jadul Online</h1>
               <p class="store-subtitle-landing" style="line-height: 28px; color: rgb(146, 146, 146);">
-                Elza Mandiri adalah toko daging yang menjual daging Ayam segar,
-                daging olahan dan bumbu pelengkap resep makanan olahan dari
-                bahan baku daging segar
+                Bolu Jadoel Ummi adalah toko bolu yang menjual bolu-bolu jadul dengan 
+                rasa yang sangat lezat dan autentik juga memiliki rasa yang sangat bervariasi.
               </p>
               <a href="products.php" class="btn btn-success px-4 py-2 mt-4"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 20 20">
@@ -345,7 +348,7 @@ if (isset($_SESSION["driver"])) {
         <div class="row">
           <div class="col-12">
             <p class="pt-4 pb-2">
-              &copy; 2021 Copyright by Elza Mandiri. All Rights Reserved.
+              &copy; 2022 Copyright by Hamzah Raihan Ikhsanul Fikri. All Rights Reserved.
             </p>
           </div>
         </div>

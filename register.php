@@ -27,7 +27,7 @@ if (isset($_POST["register"])) {
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Registrasi | Toko Supplier Daging Ayam Segar</title>
+    <title>Registrasi | Toko Bolu Jadul Online</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="assets/style/main.css" rel="stylesheet" />
@@ -41,7 +41,7 @@ if (isset($_POST["register"])) {
     >
       <div class="container">
         <a href="index.php" class="navbar-brand" title="home">
-          <img src="assets/images/logo.jpg" class="w-50" alt="logo" />
+          <img src="assets/images/BoluJadoel.png" style="width: 20%;" alt="logo"/>
         </a>
         <button
           class="navbar-toggler d-lg-none"
@@ -54,7 +54,7 @@ if (isset($_POST["register"])) {
         ></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item ">
               <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item">
@@ -76,7 +76,7 @@ if (isset($_POST["register"])) {
           <div class="row align-items-center row-login justify-content-center">
             <div class="col-lg-5">
               <h2 class="mb-4">
-                Untuk beli daging di Toko kami<br />
+                Untuk beli Bolu di Toko kami<br />
                 silahkan daftar dirimu!
               </h2>
 
@@ -157,7 +157,7 @@ if (isset($_POST["register"])) {
         <div class="row">
           <div class="col-12">
             <p class="pt-4 pb-2">
-              2020 Copyright Web RPL 17 by RPL-17. All Rights Reserved.
+              2022 Copyright Hamzah Raihan Ikhsanul Fikri. All Rights Reserved.
             </p>
           </div>
         </div>

@@ -42,7 +42,7 @@ if (isset($_SESSION["driver"])) {
     >
       <div class="container">
         <a href="index.php" class="navbar-brand" title="home">
-          <img src="assets/images/logo.jpg" class="w-50" alt="logo" />
+          <img src="assets/images/BoluJadoel.png" style="width: 20%;" alt="logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -54,13 +54,13 @@ if (isset($_SESSION["driver"])) {
         </button>
         <div class="collpase navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="index.php" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="products.php" class="nav-link">All Products</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a href="about.php" class="nav-link">About</a>
             </li>
             <?php
@@ -144,10 +144,10 @@ if (isset($_SESSION["driver"])) {
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h1 class="" style="font-size: 60px;">Elza Mandiri</h1>
-              <h5 class="">Toko Daging Ayam Potong Segar Online</h5>
+              <h1 class="" style="font-size: 60px;">Bolu Jadoel Ummi</h1>
+              <h5 class="">Toko Bolu Jadul Online</h5>
               <a
-                  href="https://wa.me/6287785604523"
+                  href=""
                   target="_blank"
                   class="btn btn-success mt-2 px-4 py-2 text-white"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 18 18">
@@ -162,7 +162,7 @@ if (isset($_SESSION["driver"])) {
         <div class="container">
           <div class="row text-center">
             <div class="col-12">
-              <h2 class="font-weight-bold mb-2">Elza Mandiri</h2>   
+              <h2 class="font-weight-bold mb-2">Bolu Jadoel Ummi</h2>   
               <hr style="border-top: 5px solid black; width: 80px;">
             </div>
           </div>
@@ -215,7 +215,7 @@ if (isset($_SESSION["driver"])) {
         <div class="row">
           <div class="col-12">
             <p class="pt-4 pb-2">
-              &copy; 2021 Copyright by Elza Mandiri. All Rights Reserved.
+              &copy; 2022 Copyright by Hamzah Raihan Ikhsanul Fikri. All Rights Reserved.
             </p>
           </div>
         </div>

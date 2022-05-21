@@ -58,7 +58,7 @@ if (isset($_POST["deleteCart"])) {
   >
     <div class="container">
       <a href="index.php" class="navbar-brand" title="home">
-        <img src="assets/images/logo.jpg" class="w-50" alt="logo" />
+        <img src="assets/images/BoluJadoel.png" style="width: 20% ;" alt="logo" />
       </a>
       <button
         class="navbar-toggler"
@@ -360,7 +360,7 @@ if (isset($_POST["deleteCart"])) {
       <div class=" container">
         <div class="row">
           <div class="col-12">
-            <p class="pt-4 pb-2">&copy; <?= date('Y'); ?> Copyright by Elza Mandiri. All Rights Reserved.</p>
+            <p class="pt-4 pb-2">&copy; <?= date('Y'); ?> 2022 Copyright by Hamzah Raihan Ikhsanul Fikri. All Rights Reserved.</p>
           </div>
         </div>
       </div>
